@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.78.0 commit date:2017-02-24, commit time:14:33, hash:e92f235283</authoring_tool>
+    </contributor>
+    <created>2017-04-30T17:21:14</created>
+    <modified>2017-04-30T17:21:14</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="Material-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Material_001-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Material-material" name="Material">
+      <instance_effect url="#Material-effect"/>
+    </material>
+    <material id="Material_001-material" name="Material_001">
+      <instance_effect url="#Material_001-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="MCM_House_Combined_027-mesh" name="MCM_House_Combined.027">
+      <mesh>
+        <source id="MCM_House_Combined_027-mesh-positions">
+          <float_array id="MCM_House_Combined_027-mesh-positions-array" count="144">10 0 11.5 10.6 0 11.5 10 0 9.900001 10.58445 0 9.900001 10.6 2.9 9.900001 10 2.9 9.900001 10 0 9.900001 10.6 0 9.900001 10.6 2.9 11.5 10 2.9 11.5 10 2.9 9.900001 10.6 2.9 9.900001 10.6 0 11.5 10 0 11.5 10 2.9 11.5 10.6 2.9 11.5 10.13398 2.9 9.900001 10.13398 2.9 10 10.13398 0 10 10.13398 0 9.900001 10.04581 0 9.900001 10.04581 0 10 10.04581 2.9 10 10.04581 2.9 9.900001 10.04581 2.9 9.900001 10.13398 2.9 9.900001 10.13398 0 9.900001 10.04581 0 9.900001 10.13398 2.9 10 10.04581 2.9 10 10.04581 0 10 10.13398 0 10 10.13398 2.9 11.4 10.13398 2.9 11.5 10.13398 0 11.5 10.13398 0 11.4 10.04581 0 11.4 10.04581 0 11.5 10.04581 2.9 11.5 10.04581 2.9 11.4 10.04581 2.9 11.4 10.13398 2.9 11.4 10.13398 0 11.4 10.04581 0 11.4 10.13398 2.9 11.5 10.04581 2.9 11.5 10.04581 0 11.5 10.13398 0 11.5</float_array>
+          <technique_common>
+            <accessor source="#MCM_House_Combined_027-mesh-positions-array" count="48" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="MCM_House_Combined_027-mesh-normals">
+          <float_array id="MCM_House_Combined_027-mesh-normals-array" count="30">1 0 9.53671e-6 0 1 0 -5.77383e-7 0 1 -2.92601e-5 0 1 -2.98374e-5 0 1 0 0 -1 1 0 0 0 -1 0 0 0 1 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#MCM_House_Combined_027-mesh-normals-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="MCM_House_Combined_027-mesh-map-0">
+          <float_array id="MCM_House_Combined_027-mesh-map-0-array" count="144">0.798656 0.929505 0.889394 0.926406 0.889394 0.929505 0.808041 0.266187 0.777244 0.277435 0.777244 0.265886 0.798657 0.926405 0.889394 0.923644 0.889394 0.926406 0.798656 0.931076 0.889394 0.928315 0.889394 0.931076 0.798656 0.928315 0.889394 0.925216 0.889394 0.928315 0.202111 0.815427 0.18424 0.767766 0.202109 0.767766 0.798657 0.925215 0.889394 0.922454 0.889394 0.925216 0.246175 0.836386 0.228302 0.75 0.246175 0.75 0.889394 0.931076 0.798656 0.934207 0.798656 0.931076 0.889395 0.920514 0.798656 0.923644 0.798656 0.920513 0.229681 0.836386 0.211813 0.75 0.229681 0.75 0.798656 0.932267 0.889394 0.929505 0.889394 0.932267 0.798656 0.929505 0.798657 0.926405 0.889394 0.926406 0.808041 0.266187 0.808042 0.277435 0.777244 0.277435 0.798657 0.926405 0.798656 0.923644 0.889394 0.923644 0.798656 0.931076 0.798656 0.928315 0.889394 0.928315 0.798656 0.928315 0.798657 0.925215 0.889394 0.925216 0.202111 0.815427 0.184238 0.815427 0.18424 0.767766 0.798657 0.925215 0.798656 0.922454 0.889394 0.922454 0.246175 0.836386 0.228302 0.836386 0.228302 0.75 0.889394 0.931076 0.889394 0.934206 0.798656 0.934207 0.889395 0.920514 0.889394 0.923644 0.798656 0.923644 0.229681 0.836386 0.211813 0.836386 0.211813 0.75 0.798656 0.932267 0.798656 0.929505 0.889394 0.929505</float_array>
+          <technique_common>
+            <accessor source="#MCM_House_Combined_027-mesh-map-0-array" count="72" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="MCM_House_Combined_027-mesh-vertices">
+          <input semantic="POSITION" source="#MCM_House_Combined_027-mesh-positions"/>
+        </vertices>
+        <polylist material="Material-material" count="24">
+          <input semantic="VERTEX" source="#MCM_House_Combined_027-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#MCM_House_Combined_027-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#MCM_House_Combined_027-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>16 0 0 18 0 1 19 0 2 3 1 3 0 1 4 1 1 5 28 2 6 30 3 7 31 4 8 40 5 9 42 5 10 43 5 11 32 6 12 34 6 13 35 6 14 8 7 15 10 7 16 11 7 17 44 8 18 46 8 19 47 8 20 12 5 21 14 5 22 15 5 23 36 9 24 38 9 25 39 9 26 20 9 27 22 9 28 23 9 29 4 8 30 6 8 31 7 8 32 24 5 33 26 5 34 27 5 35 16 0 36 17 0 37 18 0 38 3 1 39 2 1 40 0 1 41 28 2 42 29 8 43 30 3 44 40 5 45 41 5 46 42 5 47 32 6 48 33 6 49 34 6 50 8 7 51 9 7 52 10 7 53 44 8 54 45 8 55 46 8 56 12 5 57 13 5 58 14 5 59 36 9 60 37 9 61 38 9 62 20 9 63 21 9 64 22 9 65 4 8 66 5 8 67 6 8 68 24 5 69 25 5 70 26 5 71</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Door_Frame" name="Door_Frame" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 -1.62921e-7 -1 0 0 1 -1.62921e-7 0 0 0 0 1</matrix>
+        <instance_geometry url="#MCM_House_Combined_027-mesh" name="Door_Frame">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material-material" target="#Material-material"/>
+              <instance_material symbol="Material_001-material" target="#Material_001-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
