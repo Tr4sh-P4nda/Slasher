@@ -5,22 +5,17 @@
 		<script src="https://cdn.rawgit.com/AltspaceVR/AltspaceSDK/v2.4.1/dist/altspace.min.js"></script>
 	</head>
 	<body>
-
-<!-- set up the scene -->
 		<a-scene 
 			altspace=fullspace:true>
 			<a-assets>
-				<a-asset-item>
-				</a-asset-item>
+				<a-asset-item id="address" src="assets/models/Address.dae"></a-asset-item>
 			</a-assets>
-			<a-entity position="-7.11 4.98 9.43" 
-				  rotation="-60 90 0" 
-				  scale="2 20 1" 
-				  geometry="primitive:plane"
-				  altspace-cursor-collider="enabled:true" 
-				  n-mesh-collider="type:environment;convex:false"></a-entity>
-			<a-sky src="images/stars35.jpg"
-			       radius="115"></a-sky>
+			<a-collada-model src="#address"
+					 position="0 0 0" 
+					 altspace-cursor-collider="enabled:true" 
+					 n-mesh-collider="type:environment;convex:false"></a-collada-model>
+			<!--a-sky src="images/stars35.jpg"
+			       radius="115"></a-sky-->
 		</a-scene>
 	</body>
 </html>
