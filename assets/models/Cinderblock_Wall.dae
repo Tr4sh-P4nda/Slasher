@@ -5,17 +5,31 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.78.0 commit date:2017-02-24, commit time:14:33, hash:e92f235283</authoring_tool>
     </contributor>
-    <created>2017-04-30T17:18:57</created>
-    <modified>2017-04-30T17:18:57</modified>
+    <created>2017-05-01T17:06:22</created>
+    <modified>2017-05-01T17:06:22</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
-  <library_images/>
+  <library_images>
+    <image id="Cinderblock_Wall_jpg" name="Cinderblock_Wall_jpg">
+      <init_from>Cinderblock%20Wall.jpg</init_from>
+    </image>
+  </library_images>
   <library_effects>
-    <effect id="Material-effect">
+    <effect id="Material_019-effect">
       <profile_COMMON>
+        <newparam sid="Cinderblock_Wall_jpg-surface">
+          <surface type="2D">
+            <init_from>Cinderblock_Wall_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Cinderblock_Wall_jpg-sampler">
+          <sampler2D>
+            <source>Cinderblock_Wall_jpg-surface</source>
+          </sampler2D>
+        </newparam>
         <technique sid="common">
-          <phong>
+          <lambert>
             <emission>
               <color sid="emission">0 0 0 1</color>
             </emission>
@@ -23,22 +37,16 @@
               <color sid="ambient">0 0 0 1</color>
             </ambient>
             <diffuse>
-              <color sid="diffuse">0.64 0.64 0.64 1</color>
+              <texture texture="Cinderblock_Wall_jpg-sampler" texcoord="MCM_House_Combined_043-mesh-map-0"/>
             </diffuse>
-            <specular>
-              <color sid="specular">0.5 0.5 0.5 1</color>
-            </specular>
-            <shininess>
-              <float sid="shininess">50</float>
-            </shininess>
             <index_of_refraction>
               <float sid="index_of_refraction">1</float>
             </index_of_refraction>
-          </phong>
+          </lambert>
         </technique>
       </profile_COMMON>
     </effect>
-    <effect id="Material_001-effect">
+    <effect id="Material_001_002-effect">
       <profile_COMMON>
         <technique sid="common">
           <phong>
@@ -52,7 +60,7 @@
               <color sid="diffuse">0.64 0.64 0.64 1</color>
             </diffuse>
             <specular>
-              <color sid="specular">0.5 0.5 0.5 1</color>
+              <color sid="specular">0.25 0.25 0.25 1</color>
             </specular>
             <shininess>
               <float sid="shininess">50</float>
@@ -66,11 +74,11 @@
     </effect>
   </library_effects>
   <library_materials>
-    <material id="Material-material" name="Material">
-      <instance_effect url="#Material-effect"/>
+    <material id="Material_019-material" name="Material_019">
+      <instance_effect url="#Material_019-effect"/>
     </material>
-    <material id="Material_001-material" name="Material_001">
-      <instance_effect url="#Material_001-effect"/>
+    <material id="Material_001_002-material" name="Material_001_002">
+      <instance_effect url="#Material_001_002-effect"/>
     </material>
   </library_materials>
   <library_geometries>
@@ -87,19 +95,19 @@
           </technique_common>
         </source>
         <source id="MCM_House_Combined_043-mesh-normals">
-          <float_array id="MCM_House_Combined_043-mesh-normals-array" count="45">0 1 0 0 0 -1 -1 0 0 1.1952e-5 -4.69003e-6 -1 4.78274e-5 -3.45317e-6 -1 4.85573e-6 -8.08975e-6 -1 1 0 0 1 0 3.37003e-6 1 6.24081e-7 4.44684e-7 1 0 3.81472e-6 0 0 1 0 -1.08991e-5 -1 0 -1.08992e-5 -1 5.08629e-5 -3.81476e-6 -1 1 7.0643e-7 0</float_array>
+          <float_array id="MCM_House_Combined_043-mesh-normals-array" count="21">0 0 1 1 0 0 0 1 0 -1 0 0 -1.8838e-5 0 -1 0 0 -1 2.54313e-5 -3.81469e-6 -1</float_array>
           <technique_common>
-            <accessor source="#MCM_House_Combined_043-mesh-normals-array" count="15" stride="3">
+            <accessor source="#MCM_House_Combined_043-mesh-normals-array" count="7" stride="3">
               <param name="X" type="float"/>
               <param name="Y" type="float"/>
               <param name="Z" type="float"/>
             </accessor>
           </technique_common>
         </source>
-        <source id="MCM_House_Combined_043-mesh-map-0">
-          <float_array id="MCM_House_Combined_043-mesh-map-0-array" count="216">0.980079 0.283194 0.965184 0.253405 0.980079 0.253405 0.868664 0.307827 0.994272 0.272081 0.994272 0.307827 0.868664 0.272081 0.994272 0.307827 0.868664 0.307827 0.794983 0.272232 0.848547 0.307978 0.848547 0.272232 0.994271 0.263144 0.868664 0.272081 0.868665 0.263144 0.851494 0.274273 0.842558 0.33385 0.842558 0.253421 0.952914 0.253421 0.93802 0.33385 0.93802 0.253421 0.791918 0.33385 0.806811 0.253421 0.806812 0.33385 0.893337 0.253421 0.908231 0.33385 0.893337 0.33385 0.881501 0.274257 0.896395 0.253405 0.896395 0.274257 0.994271 0.263144 0.868664 0.272081 0.868664 0.263144 0.908231 0.33385 0.93802 0.253421 0.93802 0.33385 0.794984 0.307978 0.920591 0.272226 0.920592 0.307972 0.806811 0.253421 0.827663 0.33385 0.806812 0.33385 0.893337 0.253421 0.863548 0.33385 0.863548 0.253421 0.920591 0.272226 0.794983 0.263296 0.92059 0.263289 0.842558 0.253421 0.827663 0.33385 0.827664 0.253421 0.980079 0.283194 0.965184 0.283194 0.965184 0.253405 0.868664 0.307827 0.868664 0.272081 0.994272 0.272081 0.868664 0.272081 0.994272 0.272081 0.994272 0.307827 0.794983 0.272232 0.794984 0.307978 0.848547 0.307978 0.994271 0.263144 0.994272 0.272081 0.868664 0.272081 0.86341 0.253421 0.86341 0.274273 0.851494 0.274273 0.851494 0.274273 0.851494 0.33385 0.842558 0.33385 0.842558 0.253421 0.86341 0.253421 0.851494 0.274273 0.952914 0.253421 0.952914 0.33385 0.93802 0.33385 0.791918 0.33385 0.791917 0.253421 0.806811 0.253421 0.893337 0.253421 0.908231 0.253421 0.908231 0.33385 0.881501 0.274257 0.881501 0.253405 0.896395 0.253405 0.994271 0.263144 0.994272 0.272081 0.868664 0.272081 0.908231 0.33385 0.908231 0.253421 0.93802 0.253421 0.794984 0.307978 0.794983 0.272232 0.920591 0.272226 0.806811 0.253421 0.827664 0.253421 0.827663 0.33385 0.893337 0.253421 0.893337 0.33385 0.863548 0.33385 0.920591 0.272226 0.794983 0.272232 0.794983 0.263296 0.842558 0.253421 0.842558 0.33385 0.827663 0.33385</float_array>
+        <source id="MCM_House_Combined_043-mesh-map">
+          <float_array id="MCM_House_Combined_043-mesh-map-array" count="216">0.893337 0.33385 0.863548 0.253421 0.893337 0.253421 0.952914 0.33385 0.93802 0.253421 0.952914 0.253421 0.881501 0.253405 0.896395 0.274257 0.881501 0.274257 0.908231 0.253421 0.893337 0.33385 0.893337 0.253421 0.842558 0.253421 0.851494 0.274273 0.842558 0.33385 0.794983 0.272232 0.92059 0.263289 0.920591 0.272226 0.994272 0.272081 0.868664 0.307827 0.868664 0.272081 0.842558 0.33385 0.827664 0.253421 0.842558 0.253421 0.908231 0.253421 0.93802 0.33385 0.908231 0.33385 0.827664 0.253421 0.806812 0.33385 0.806811 0.253421 0.994272 0.272081 0.868664 0.263144 0.994271 0.263144 0.965184 0.283194 0.980079 0.253405 0.980079 0.283194 0.794984 0.307978 0.848547 0.272232 0.794983 0.272232 0.994272 0.272081 0.868665 0.263144 0.994271 0.263144 0.791917 0.253421 0.806812 0.33385 0.791918 0.33385 0.794983 0.272232 0.920592 0.307972 0.794984 0.307978 0.868664 0.272081 0.994272 0.307827 0.868664 0.307827 0.893337 0.33385 0.863548 0.33385 0.863548 0.253421 0.952914 0.33385 0.93802 0.33385 0.93802 0.253421 0.881501 0.253405 0.896395 0.253405 0.896395 0.274257 0.908231 0.253421 0.908231 0.33385 0.893337 0.33385 0.842558 0.253421 0.86341 0.253421 0.851494 0.274273 0.851494 0.274273 0.851494 0.33385 0.842558 0.33385 0.86341 0.253421 0.86341 0.274273 0.851494 0.274273 0.794983 0.272232 0.794983 0.263296 0.92059 0.263289 0.994272 0.272081 0.994272 0.307827 0.868664 0.307827 0.842558 0.33385 0.827663 0.33385 0.827664 0.253421 0.908231 0.253421 0.93802 0.253421 0.93802 0.33385 0.827664 0.253421 0.827663 0.33385 0.806812 0.33385 0.994272 0.272081 0.868664 0.272081 0.868664 0.263144 0.965184 0.283194 0.965184 0.253405 0.980079 0.253405 0.794984 0.307978 0.848547 0.307978 0.848547 0.272232 0.994272 0.272081 0.868664 0.272081 0.868665 0.263144 0.791917 0.253421 0.806811 0.253421 0.806812 0.33385 0.794983 0.272232 0.920591 0.272226 0.920592 0.307972 0.868664 0.272081 0.994272 0.272081 0.994272 0.307827</float_array>
           <technique_common>
-            <accessor source="#MCM_House_Combined_043-mesh-map-0-array" count="108" stride="2">
+            <accessor source="#MCM_House_Combined_043-mesh-map-array" count="108" stride="2">
               <param name="S" type="float"/>
               <param name="T" type="float"/>
             </accessor>
@@ -108,12 +116,12 @@
         <vertices id="MCM_House_Combined_043-mesh-vertices">
           <input semantic="POSITION" source="#MCM_House_Combined_043-mesh-positions"/>
         </vertices>
-        <polylist material="Material-material" count="36">
+        <polylist material="Material_019-material" count="36">
           <input semantic="VERTEX" source="#MCM_House_Combined_043-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#MCM_House_Combined_043-mesh-normals" offset="1"/>
-          <input semantic="TEXCOORD" source="#MCM_House_Combined_043-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#MCM_House_Combined_043-mesh-map" offset="2" set="0"/>
           <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
-          <p>54 0 0 56 0 1 57 0 2 12 1 3 14 1 4 15 1 5 0 1 6 2 1 7 3 1 8 4 2 9 6 2 10 7 2 11 8 0 12 10 0 13 11 0 14 46 3 15 44 4 16 45 5 17 66 6 18 68 6 19 69 6 20 38 7 21 36 8 22 37 9 23 40 2 24 42 2 25 43 2 26 32 0 27 34 0 28 35 0 29 16 0 30 18 0 31 19 0 32 50 1 33 52 1 34 53 1 35 20 1 36 22 1 37 23 1 38 28 10 39 30 10 40 31 10 41 58 10 42 60 10 43 61 10 44 24 0 45 26 0 46 27 0 47 62 2 48 64 2 49 65 2 50 54 0 51 55 0 52 56 0 53 12 1 54 13 1 55 14 1 56 0 1 57 1 1 58 2 1 59 4 2 60 5 2 61 6 2 62 8 0 63 9 0 64 10 0 65 49 11 66 48 12 67 46 3 68 46 3 69 47 13 70 44 4 71 45 5 72 49 11 73 46 3 74 66 6 75 67 6 76 68 6 77 38 7 78 39 14 79 36 8 80 40 2 81 41 2 82 42 2 83 32 0 84 33 0 85 34 0 86 16 0 87 17 0 88 18 0 89 50 1 90 51 1 91 52 1 92 20 1 93 21 1 94 22 1 95 28 10 96 29 10 97 30 10 98 58 10 99 59 10 100 60 10 101 24 0 102 25 0 103 26 0 104 62 2 105 63 2 106 64 2 107</p>
+          <p>59 0 0 61 0 1 58 0 2 67 1 3 69 1 4 66 1 5 33 2 6 35 2 7 32 2 8 41 3 9 43 3 10 40 3 11 45 4 12 46 4 13 44 4 14 25 2 15 27 2 16 24 2 17 1 5 18 3 5 19 0 5 20 63 3 21 65 3 22 62 3 23 51 5 24 53 5 25 50 5 26 29 0 27 31 0 28 28 0 29 17 2 30 19 2 31 16 2 32 55 2 33 57 2 34 54 2 35 5 3 36 7 3 37 4 3 38 9 2 39 11 2 40 8 2 41 39 1 42 37 1 43 38 1 44 21 5 45 23 5 46 20 5 47 13 5 48 15 5 49 12 5 50 59 0 51 60 0 52 61 0 53 67 1 54 68 1 55 69 1 56 33 2 57 34 2 58 35 2 59 41 3 60 42 3 61 43 3 62 45 5 63 49 5 64 46 5 65 46 6 66 47 6 67 44 6 68 49 5 69 48 5 70 46 5 71 25 2 72 26 2 73 27 2 74 1 5 75 2 5 76 3 5 77 63 3 78 64 3 79 65 3 80 51 5 81 52 5 82 53 5 83 29 0 84 30 0 85 31 0 86 17 2 87 18 2 88 19 2 89 55 2 90 56 2 91 57 2 92 5 3 93 6 3 94 7 3 95 9 2 96 10 2 97 11 2 98 39 1 99 36 1 100 37 1 101 21 5 102 22 5 103 23 5 104 13 5 105 14 5 106 15 5 107</p>
         </polylist>
       </mesh>
     </geometry>
@@ -126,8 +134,12 @@
         <instance_geometry url="#MCM_House_Combined_043-mesh" name="Cinderblock_Wall">
           <bind_material>
             <technique_common>
-              <instance_material symbol="Material-material" target="#Material-material"/>
-              <instance_material symbol="Material_001-material" target="#Material_001-material"/>
+              <instance_material symbol="Material_019-material" target="#Material_019-material">
+                <bind_vertex_input semantic="MCM_House_Combined_043-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="Material_001_002-material" target="#Material_001_002-material">
+                <bind_vertex_input semantic="MCM_House_Combined_043-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
             </technique_common>
           </bind_material>
         </instance_geometry>

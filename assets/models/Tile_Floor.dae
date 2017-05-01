@@ -5,17 +5,31 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.78.0 commit date:2017-02-24, commit time:14:33, hash:e92f235283</authoring_tool>
     </contributor>
-    <created>2017-04-30T17:59:47</created>
-    <modified>2017-04-30T17:59:47</modified>
+    <created>2017-05-01T17:07:38</created>
+    <modified>2017-05-01T17:07:38</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
-  <library_images/>
+  <library_images>
+    <image id="Tile_jpg" name="Tile_jpg">
+      <init_from>Tile.jpg</init_from>
+    </image>
+  </library_images>
   <library_effects>
-    <effect id="Material-effect">
+    <effect id="Material_011-effect">
       <profile_COMMON>
+        <newparam sid="Tile_jpg-surface">
+          <surface type="2D">
+            <init_from>Tile_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Tile_jpg-sampler">
+          <sampler2D>
+            <source>Tile_jpg-surface</source>
+          </sampler2D>
+        </newparam>
         <technique sid="common">
-          <phong>
+          <lambert>
             <emission>
               <color sid="emission">0 0 0 1</color>
             </emission>
@@ -23,25 +37,19 @@
               <color sid="ambient">0 0 0 1</color>
             </ambient>
             <diffuse>
-              <color sid="diffuse">0.64 0.64 0.64 1</color>
+              <texture texture="Tile_jpg-sampler" texcoord="MCM_House_Combined_047-mesh-map-0"/>
             </diffuse>
-            <specular>
-              <color sid="specular">0.5 0.5 0.5 1</color>
-            </specular>
-            <shininess>
-              <float sid="shininess">50</float>
-            </shininess>
             <index_of_refraction>
               <float sid="index_of_refraction">1</float>
             </index_of_refraction>
-          </phong>
+          </lambert>
         </technique>
       </profile_COMMON>
     </effect>
   </library_effects>
   <library_materials>
-    <material id="Material-material" name="Material">
-      <instance_effect url="#Material-effect"/>
+    <material id="Material_011-material" name="Material_011">
+      <instance_effect url="#Material_011-effect"/>
     </material>
   </library_materials>
   <library_geometries>
@@ -67,10 +75,10 @@
             </accessor>
           </technique_common>
         </source>
-        <source id="MCM_House_Combined_047-mesh-map-0">
-          <float_array id="MCM_House_Combined_047-mesh-map-0-array" count="24">0.70246 0.125 0.500174 0.25 0.500174 0.125 0.530946 0.125 0.73491 0.199763 0.530946 0.2 0.70246 0.125 0.70246 0.249999 0.500174 0.25 0.530946 0.125 0.73491 0.125 0.73491 0.199763</float_array>
+        <source id="MCM_House_Combined_047-mesh-map">
+          <float_array id="MCM_House_Combined_047-mesh-map-array" count="24">0.70246 0.125 0.500174 0.25 0.500174 0.125 0.70246 0.125 0.70246 0.249999 0.500174 0.25 0.530946 0.125 0.73491 0.199763 0.530946 0.2 0.530946 0.125 0.73491 0.125 0.73491 0.199763</float_array>
           <technique_common>
-            <accessor source="#MCM_House_Combined_047-mesh-map-0-array" count="12" stride="2">
+            <accessor source="#MCM_House_Combined_047-mesh-map-array" count="12" stride="2">
               <param name="S" type="float"/>
               <param name="T" type="float"/>
             </accessor>
@@ -79,12 +87,12 @@
         <vertices id="MCM_House_Combined_047-mesh-vertices">
           <input semantic="POSITION" source="#MCM_House_Combined_047-mesh-positions"/>
         </vertices>
-        <polylist material="Material-material" count="4">
+        <polylist material="Material_011-material" count="4">
           <input semantic="VERTEX" source="#MCM_House_Combined_047-mesh-vertices" offset="0"/>
           <input semantic="NORMAL" source="#MCM_House_Combined_047-mesh-normals" offset="1"/>
-          <input semantic="TEXCOORD" source="#MCM_House_Combined_047-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#MCM_House_Combined_047-mesh-map" offset="2" set="0"/>
           <vcount>3 3 3 3 </vcount>
-          <p>1 0 0 2 0 1 0 0 2 5 0 3 6 0 4 4 0 5 1 0 6 3 0 7 2 0 8 5 0 9 7 0 10 6 0 11</p>
+          <p>1 0 0 2 0 1 0 0 2 1 0 3 3 0 4 2 0 5 5 0 6 6 0 7 4 0 8 5 0 9 7 0 10 6 0 11</p>
         </polylist>
       </mesh>
     </geometry>
@@ -97,7 +105,9 @@
         <instance_geometry url="#MCM_House_Combined_047-mesh" name="Tile_Floor">
           <bind_material>
             <technique_common>
-              <instance_material symbol="Material-material" target="#Material-material"/>
+              <instance_material symbol="Material_011-material" target="#Material_011-material">
+                <bind_vertex_input semantic="MCM_House_Combined_047-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
             </technique_common>
           </bind_material>
         </instance_geometry>
