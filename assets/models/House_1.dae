@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.78.0 commit date:2017-02-24, commit time:14:33, hash:e92f235283</authoring_tool>
+    </contributor>
+    <created>2017-04-30T19:14:41</created>
+    <modified>2017-04-30T19:14:41</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="Material-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Material-material" name="Material">
+      <instance_effect url="#Material-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="MCM_House_Combined_001-mesh" name="MCM_House_Combined.001">
+      <mesh>
+        <source id="MCM_House_Combined_001-mesh-positions">
+          <float_array id="MCM_House_Combined_001-mesh-positions-array" count="117">-54.7338 4.830049 -34.08452 -56.21353 5.019454 -34.53803 -56.21353 5.019454 -73.6267 -54.7338 4.830049 -74.41729 -54.55112 5.513148 -74.41729 -54.55112 5.513148 -33.98453 -54.7338 4.830049 -34.08452 -54.7338 4.830049 -74.41729 -67.23381 7.958146 -34.08452 -54.7338 4.830049 -34.08452 -54.55112 5.513148 -33.98453 -67.23381 8.665979 -33.98453 -79.91649 5.513148 -33.98453 -79.7338 4.830049 -34.08452 -67.23381 8.02084 -34.41066 -78.4758 5.176789 -34.41066 -78.4758 -0.2 -34.41066 -55.9918 5.105076 -34.41066 -55.9918 -0.2 -34.41066 -55.9918 5.105076 -34.41066 -55.9918 -0.2 -34.41066 -55.9918 -0.2 -73.95175 -55.9918 5.009786 -73.95175 -54.7338 4.830049 -74.41729 -56.21353 5.019454 -73.6267 -67.23381 7.958146 -75.60543 -67.23381 7.958146 -77.7451 -79.7338 4.830049 -73.6267 -79.7338 4.830049 -74.41729 -67.23381 7.958146 -77.7451 -67.23381 7.958146 -75.60543 -79.7338 4.830049 -34.08452 -79.7338 4.830049 -34.53187 -67.23381 7.958146 -34.58399 -67.23381 7.958146 -34.08452 -56.21353 5.019454 -34.53803 -54.7338 4.830049 -34.08452 -67.23381 7.958146 -34.08452 -67.23381 7.958146 -34.58399</float_array>
+          <technique_common>
+            <accessor source="#MCM_House_Combined_001-mesh-positions-array" count="39" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="MCM_House_Combined_001-mesh-normals">
+          <float_array id="MCM_House_Combined_001-mesh-normals-array" count="105">1 0 0 0.96605 -0.2583553 0 0.9660509 -0.2583521 0 0.96605 -0.2583553 0 0.2427626 -0.9700858 0 0.2427614 -0.9700861 0 0.2427627 -0.9700857 0 0 -0.1379452 0.9904399 -0.03437119 -0.1378092 0.9898623 0 -0.1379666 0.990437 -0.1478356 -0.9889538 -0.01073187 -0.1587882 -0.9871771 -0.01635754 -0.2372509 -0.9697666 -0.05713957 -0.2372588 -0.9697664 -0.05710887 -0.1428512 -0.9894241 0.02516788 -0.1299226 -0.9915133 0.004636764 -0.2454476 -0.9501486 0.192284 -0.2454583 -0.95015 0.1922636 -0.129906 -0.9915155 0.004645407 -0.1587825 -0.9871779 -0.01637285 -0.1478176 -0.9889566 -0.01071977 0.2427619 -0.970086 0 0.2427608 -0.9700863 0 0.242762 -0.970086 0 -3.06016e-7 0 1 0 0 1 0 0 1 0.9660509 -0.2583521 0 0.2427613 -0.970086 0 0.03437089 -0.1378087 0.9898623 0.03438061 -0.1378586 0.9898551 -0.03436285 -0.137766 0.9898685 -0.1428532 -0.9894239 0.02516418 0.2427608 -0.9700863 0 -5.11699e-7 0 1</float_array>
+          <technique_common>
+            <accessor source="#MCM_House_Combined_001-mesh-normals-array" count="35" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="MCM_House_Combined_001-mesh-map-0">
+          <float_array id="MCM_House_Combined_001-mesh-map-0-array" count="126">0.25 0.799849 0 0.766653 0.25 0.76691 0.25 0.790355 6.18e-4 0.786334 0.25 0.785982 0.125 0.797499 0.25 0.781067 0.125 0.818279 0.125 0.78467 0 0.808384 0.125 0.777627 3e-6 0.788623 0.01479697 0.780589 0.125 0.797499 0.125 0.818279 3e-6 0.788623 0.125 0.797499 0.01479697 0.794312 3e-6 0.786582 0.125 0.812803 0.125 0.817646 0.01479697 0.794312 0.125 0.812803 0.233943 0.794643 0.009097993 0.803126 0.004601955 0.794643 0.125 0.812803 0.25 0.79774 0.125 0.817646 0 0.859475 0.125 0.768261 0.25 0.859862 0.25 0.799849 0 0.800195 0 0.766653 0.25 0.790355 0 0.790707 6.18e-4 0.786334 0.125 0.797499 0.25 0.773336 0.25 0.781067 0.25 0.80837 0.248199 0.815167 0.125 0.78467 0.125 0.78467 0.001797974 0.815181 0 0.808384 0.125 0.777627 0.25 0.80837 0.125 0.78467 0.233943 0.794643 0.231364 0.803126 0.009097993 0.803126 0.125 0.812803 0.25 0.793399 0.25 0.79774 0.25 0.800071 0.25 0.859862 0.125 0.768261 0 0.859475 0 0.800495 0.125 0.768261</float_array>
+          <technique_common>
+            <accessor source="#MCM_House_Combined_001-mesh-map-0-array" count="63" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="MCM_House_Combined_001-mesh-vertices">
+          <input semantic="POSITION" source="#MCM_House_Combined_001-mesh-positions"/>
+        </vertices>
+        <polylist material="Material-material" count="21">
+          <input semantic="VERTEX" source="#MCM_House_Combined_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#MCM_House_Combined_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#MCM_House_Combined_001-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>22 0 0 20 0 1 21 0 2 4 1 3 6 2 4 7 3 5 30 4 6 28 5 7 29 6 8 8 7 9 10 8 10 11 9 11 23 10 12 24 11 13 25 12 14 26 13 15 23 10 16 25 12 17 35 14 18 36 15 19 37 16 20 38 17 21 35 14 22 37 16 23 0 18 24 2 19 25 3 20 26 34 21 27 32 22 28 33 23 29 18 24 30 14 25 31 16 26 32 22 0 33 19 0 34 20 0 35 4 1 36 5 27 37 6 2 38 30 4 39 27 28 40 28 5 41 12 29 42 13 30 43 8 7 44 8 7 45 9 31 46 10 8 47 11 9 48 12 29 49 8 7 50 0 18 51 1 32 52 2 19 53 34 21 54 31 33 55 32 22 56 15 26 57 16 26 58 14 25 59 18 24 60 17 34 61 14 25 62</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="House_1" name="House_1" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 -1.62921e-7 -1 0 0 1 -1.62921e-7 0 0 0 0 1</matrix>
+        <instance_geometry url="#MCM_House_Combined_001-mesh" name="House_1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material-material" target="#Material-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
