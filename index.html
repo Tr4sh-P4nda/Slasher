@@ -9,8 +9,8 @@
 			altspace=fullspace:true>
 			<a-assets>
 				<a-asset-item id="dj" src="assets/models/DJ Booth.dae"></a-asset-item>
-				<a-asset-item id="sky" src="images/stars35.jpg"></a-asset-item>
-				<a-asset-item id="grid" src="images/grid.png"></a-asset-item>
+				<a-asset-item id="sky" src="assets/images/stars35.jpg"></a-asset-item>
+				<a-asset-item id="grid" src="assets/images/grid.png"></a-asset-item>
 			</a-assets>
 			<a-collada-model src="#dj"
 				position="0 0 0"
@@ -18,16 +18,32 @@
 				altspace-cursor-collider="enabled:false" 
 				n-mesh-collider="type:environment;convex:true">
 			</a-collada-model>
-			<a-plane src="#grid"
+			<!--a-plane src="#grid"
 				width="1000"
 				height="1000"
 				material="repeat: 1000 1000; side: double"
 				rotation="90 0 0"
 				position="0 0.02 0">
-			</a-plane>
+			</a-plane-->
+			<a-entity id="danceFloor" 
+				geometry="primitive: box;"
+				position='0 0 0'
+				scale='1 .01 1'
+				repeat="10 10"
+				n-mesh-collider="type: environment">
+			</a-entity>
 			<a-sky src="sky"
 			       radius="1000">
 			</a-sky>
 		</a-scene>
+		<script>
+			var changeColorRandom = function () {
+				var rand = function () {
+					return Math.floor(Math.random() * 255)
+				};
+				document.querySelector('#danceFloor').setAttribute('material', 'color', 'rgb(' + rand() + ',' + rand() + ',' + rand() + ')');
+			}
+			setInterval(changeColorRandom, 469);
+		</script>
 	</body>
 </html>
