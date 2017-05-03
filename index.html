@@ -8,22 +8,24 @@
 		<a-scene 
 			altspace=fullspace:true>
 			<a-assets>
-				<a-asset-item id="db" src="assets/models/DJ Booth.dae"></a-asset-item>
+				<a-asset-item id="dj" src="assets/models/DJ Booth.dae"></a-asset-item>
+				<a-asset-item id="sky" src="images/stars35.jpg"></a-asset-item>
+				<a-asset-item id="grid" src="images/grid.png"></a-asset-item>
 			</a-assets>
-			<a-collada-model src="#db"
+			<a-collada-model src="#dj"
 				position="0 0 0"
 				scale="1 1 1"
 				altspace-cursor-collider="enabled:false" 
 				n-mesh-collider="type:environment;convex:false">
 			</a-collada-model>
-			<a-plane src="images/grid.png"
+			<a-plane src="#grid"
 				width="1000"
 				height="1000"
 				material="repeat: 1000 1000; side: double"
 				rotation="90 0 0"
 				position="0 0.02 0">
 			</a-plane>
-			<a-sky src="assets/images/stars35.jpg"
+			<a-sky src="sky"
 			       radius="1000">
 			</a-sky>
 		</a-scene>
