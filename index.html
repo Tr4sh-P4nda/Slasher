@@ -8,15 +8,22 @@
 		<a-scene 
 			altspace=fullspace:true>
 			<a-assets>
-				<a-asset-item id="mb" src="assets/models/MirrorBall.dae"></a-asset-item>
+				<a-asset-item id="db" src="assets/models/DJ Booth.dae"></a-asset-item>
 			</a-assets>
 			<a-collada-model src="#mb"
-				position="0 0 0"
-					 scale="10 10 10"
-				altspace-cursor-collider="enabled:true" 
-				n-mesh-collider="type:environment;convex:false"></a-collada-model>
-			<!--a-sky src="assets/images/stars35.jpg"
-			       radius="115"></a-sky-->
+				position="0 0 10"
+				scale="10 10 10"
+				altspace-cursor-collider="enabled:false" 
+				n-mesh-collider="type:environment;convex:false">
+			</a-collada-model>
+			<a-plane src="images/grid.png"
+				width="1000"
+				height="1000"
+				material="repeat: 1000 1000; side: double"
+				rotation="90 0 0"
+				position="0 0 0">
+			<a-sky src="assets/images/stars35.jpg"
+			       radius="1000"></a-sky->
 		</a-scene>
 	</body>
 </html>
