@@ -1,0 +1,12 @@
+# Blender MTL File: 'Jukebox3.blend'
+# Material Count: 1
+
+newmtl stand
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.227451 0.227451 0.227451
+Ks 0.427451 0.427451 0.427451
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2

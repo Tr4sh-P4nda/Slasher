@@ -1,0 +1,12 @@
+# Blender MTL File: 'Jukebox3.blend'
+# Material Count: 1
+
+newmtl reflect_metal
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.419608 0.427451 0.501961
+Ks 0.619608 0.619608 0.619608
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
