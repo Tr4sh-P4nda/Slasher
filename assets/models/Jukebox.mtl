@@ -30,7 +30,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 0.000000
 illum 2
-map_Kd C:\Users\heath\Desktop\New Jukebox\Jukebox\cd.jpg
+map_Kd cd.jpg
 
 newmtl glass
 Ns 0.000000
@@ -51,7 +51,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd C:\Users\heath\Desktop\New Jukebox\Jukebox\indisp.jpg
+map_Kd indisp.jpg
 
 newmtl neonic
 Ns 0.000000
@@ -62,7 +62,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd C:\Users\heath\Desktop\New Jukebox\Jukebox\neonic.jpg
+map_Kd neonic.jpg
 
 newmtl pink_neon
 Ns 0.000000
@@ -103,7 +103,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd C:\Users\heath\Desktop\New Jukebox\Jukebox\spesec.jpg
+map_Kd spesec.jpg
 
 newmtl stand
 Ns 0.000000
@@ -124,7 +124,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd C:\Users\heath\Desktop\New Jukebox\Jukebox\woodpa.jpg
+map_Kd woodpa.jpg
 
 newmtl woodpad
 Ns 0.000000
@@ -135,7 +135,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd C:\Users\heath\Desktop\New Jukebox\Jukebox\woodpa.jpg
+map_Kd woodpa.jpg
 
 newmtl yellow_neon
 Ns 0.000000
