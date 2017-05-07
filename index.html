@@ -17,186 +17,163 @@
 			<a-sky src="assets/images/stars35.jpg"
 			       radius="1000">
 			</a-sky>
-			<a-assets>
-				<a-asset-item id="CDs-obj" src="JukeboxParts/CDs.obj"></a-asset-item>
-				<a-asset-item id="CDs-mtl" src="JukeboxParts/CDs.mtl"></a-asset-item>
-			</a-assets>
+
+<!--Copy the following code into your HTML file-->
 			<a-entity 
-				id="CDs"
 				position="0 0 -5"
-				scale="4 4 4"
-				altspace-cursor-collider="enabled:false"
-				n-mesh-collider="type:environment;convex:true"
-				obj-model="obj: #CDs-obj; mtl: #CDs-mtl">
+				scale="5 5 5">
+				<a-assets>
+					<a-asset-item id="CDs-obj" src="JukeboxParts/CDs.obj"></a-asset-item>
+					<a-asset-item id="CDs-mtl" src="JukeboxParts/CDs.mtl"></a-asset-item>
+				</a-assets>
+				<a-entity 
+					id="CDs"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #CDs-obj; mtl: #CDs-mtl">
+				</a-entity>
+				<a-assets>
+					<a-asset-item id="Legs1-obj" src="JukeboxParts/Legs1.obj"></a-asset-item>
+					<a-asset-item id="Legs1-mtl" src="JukeboxParts/Legs1.mtl"></a-asset-item>
+				</a-assets>
+				<a-entity 
+					id="Legs1"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #Legs1-obj; mtl: #Legs1-mtl">
+				</a-entity>
+				<a-assets>
+					<a-asset-item id="Legs2-obj" src="JukeboxParts/Legs2.obj"></a-asset-item>
+					<a-asset-item id="Legs2-mtl" src="JukeboxParts/Legs2.mtl"></a-asset-item>
+				</a-assets>
+				<a-entity 
+					id="Legs2"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #Legs2-obj; mtl: #Legs2-mtl">
+				</a-entity>
+				<a-assets>
+					<a-asset-item id="Metal1-obj" src="JukeboxParts/Metal1.obj"></a-asset-item>
+					<a-asset-item id="Metal1-mtl" src="JukeboxParts/Metal1.mtl"></a-asset-item>
+				</a-assets>
+				<a-entity 
+					id="Metal1"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #Metal1-obj; mtl: #Metal1-mtl">
+				</a-entity>
+				<a-assets>
+					<a-asset-item id="Metal2-obj" src="JukeboxParts/Metal2.obj"></a-asset-item>
+					<a-asset-item id="Metal2-mtl" src="JukeboxParts/Metal2.mtl"></a-asset-item>
+				</a-assets>
+				<a-entity 
+					id="Metal2"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #Metal2-obj; mtl: #Metal2-mtl">
+				</a-entity>
+				<a-assets>
+					<a-asset-item id="Metal3-obj" src="JukeboxParts/Metal3.obj"></a-asset-item>
+					<a-asset-item id="Metal3-mtl" src="JukeboxParts/Metal3.mtl"></a-asset-item>
+				</a-assets>
+				<a-entity 
+					id="Metal3"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #Metal3-obj; mtl: #Metal3-mtl">
+				</a-entity>
+				<a-assets>
+					<a-asset-item id="Neon-obj" src="JukeboxParts/Neon.obj"></a-asset-item>
+					<a-asset-item id="Neon-mtl" src="JukeboxParts/Neon.mtl"></a-asset-item>
+				</a-assets>
+				<a-entity 
+					id="Neon"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #Neon-obj; mtl: #Neon-mtl">
+				</a-entity>
+				<a-assets>
+					<a-asset-item id="Parts1-obj" src="JukeboxParts/Parts1.obj"></a-asset-item>
+					<a-asset-item id="Parts1-mtl" src="JukeboxParts/Parts1.mtl"></a-asset-item>
+				</a-assets>
+				<a-entity 
+					id="Parts1"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #Parts1-obj; mtl: #Parts1-mtl">
+				</a-entity>
+				<a-assets>
+					<a-asset-item id="Parts2-obj" src="JukeboxParts/Parts2.obj"></a-asset-item>
+					<a-asset-item id="Parts2-mtl" src="JukeboxParts/Parts2.mtl"></a-asset-item>
+				</a-assets>
+				<a-entity 
+					id="Parts2"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #Parts2-obj; mtl: #Parts2-mtl">
+				</a-entity>
+				<a-assets>
+					<a-asset-item id="Plastic1-obj" src="JukeboxParts/Plastic1.obj"></a-asset-item>
+					<a-asset-item id="Plastic1-mtl" src="JukeboxParts/Plastic1.mtl"></a-asset-item>
+				</a-assets>
+				<a-entity 
+					id="Plastic1"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #Plastic1-obj; mtl: #Plastic1-mtl">
+				</a-entity>
+				<a-assets>
+					<a-asset-item id="Plastic2-obj" src="JukeboxParts/Plastic2.obj"></a-asset-item>
+					<a-asset-item id="Plastic2-mtl" src="JukeboxParts/Plastic2.mtl"></a-asset-item>
+				</a-assets>
+				<a-entity 
+					id="Plastic2"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #Plastic2-obj; mtl: #Plastic2-mtl">
+				</a-entity>
+				<a-assets>
+					<a-asset-item id="Plastic3-obj" src="JukeboxParts/Plastic3.obj"></a-asset-item>
+					<a-asset-item id="Plastic3-mtl" src="JukeboxParts/Plastic3.mtl"></a-asset-item>
+				</a-assets>
+				<a-entity 
+					id="Plastic3"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #Plastic3-obj; mtl: #Plastic3-mtl">
+				</a-entity>
+				<a-assets>
+					<a-asset-item id="Speaker-obj" src="JukeboxParts/Speaker.obj"></a-asset-item>
+					<a-asset-item id="Speaker-mtl" src="JukeboxParts/Speaker.mtl"></a-asset-item>
+				</a-assets>
+				<a-entity 
+					id="Speaker"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #Speaker-obj; mtl: #Speaker-mtl">
+				</a-entity>
+				<a-assets>
+					<a-asset-item id="Wood1-obj" src="JukeboxParts/Wood1.obj"></a-asset-item>
+					<a-asset-item id="Wood1-mtl" src="JukeboxParts/Wood1.mtl"></a-asset-item>
+				</a-assets>
+				<a-entity 
+					id="Wood1"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #Wood1-obj; mtl: #Wood1-mtl">
+				</a-entity>
+				<a-assets>
+					<a-asset-item id="Wood2-obj" src="JukeboxParts/Wood2.obj"></a-asset-item>
+					<a-asset-item id="Wood2-mtl" src="JukeboxParts/Wood2.mtl"></a-asset-item>
+				</a-assets>
+				<a-entity 
+					id="Wood2"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #Wood2-obj; mtl: #Wood2-mtl">
+				</a-entity>
 			</a-entity>
-			<a-assets>
-				<a-asset-item id="Legs1-obj" src="JukeboxParts/Legs1.obj"></a-asset-item>
-				<a-asset-item id="Legs1-mtl" src="JukeboxParts/Legs1.mtl"></a-asset-item>
-			</a-assets>
-			<a-entity 
-				id="Legs1"
-				position="0 0 -5"
-				scale="4 4 4"
-				altspace-cursor-collider="enabled:false"
-				n-mesh-collider="type:environment;convex:true"
-				obj-model="obj: #Legs1-obj; mtl: #Legs1-mtl">
-			</a-entity>
-			<a-assets>
-				<a-asset-item id="Legs2-obj" src="JukeboxParts/Legs2.obj"></a-asset-item>
-				<a-asset-item id="Legs2-mtl" src="JukeboxParts/Legs2.mtl"></a-asset-item>
-			</a-assets>
-			<a-entity 
-				id="Legs2"
-				position="0 0 -5"
-				scale="4 4 4"
-				altspace-cursor-collider="enabled:false"
-				n-mesh-collider="type:environment;convex:true"
-				obj-model="obj: #Legs2-obj; mtl: #Legs2-mtl">
-			</a-entity>
-			<a-assets>
-				<a-asset-item id="Metal1-obj" src="JukeboxParts/Metal1.obj"></a-asset-item>
-				<a-asset-item id="Metal1-mtl" src="JukeboxParts/Metal1.mtl"></a-asset-item>
-			</a-assets>
-			<a-entity 
-				id="Metal1"
-				position="0 0 -5"
-				scale="4 4 4"
-				altspace-cursor-collider="enabled:false"
-				n-mesh-collider="type:environment;convex:true"
-				obj-model="obj: #Metal1-obj; mtl: #Metal1-mtl">
-			</a-entity>
-			<a-assets>
-				<a-asset-item id="Metal2-obj" src="JukeboxParts/Metal2.obj"></a-asset-item>
-				<a-asset-item id="Metal2-mtl" src="JukeboxParts/Metal2.mtl"></a-asset-item>
-			</a-assets>
-			<a-entity 
-				id="Metal2"
-				position="0 0 -5"
-				scale="4 4 4"
-				altspace-cursor-collider="enabled:false"
-				n-mesh-collider="type:environment;convex:true"
-				obj-model="obj: #Metal2-obj; mtl: #Metal2-mtl">
-			</a-entity>
-			<a-assets>
-				<a-asset-item id="Metal3-obj" src="JukeboxParts/Metal3.obj"></a-asset-item>
-				<a-asset-item id="Metal3-mtl" src="JukeboxParts/Metal3.mtl"></a-asset-item>
-			</a-assets>
-			<a-entity 
-				id="Metal3"
-				position="0 0 -5"
-				scale="4 4 4"
-				altspace-cursor-collider="enabled:false"
-				n-mesh-collider="type:environment;convex:true"
-				obj-model="obj: #Metal3-obj; mtl: #Metal3-mtl">
-			</a-entity>
-			<a-assets>
-				<a-asset-item id="Neon-obj" src="JukeboxParts/Neon.obj"></a-asset-item>
-				<a-asset-item id="Neon-mtl" src="JukeboxParts/Neon.mtl"></a-asset-item>
-			</a-assets>
-			<a-entity 
-				id="Neon"
-				position="0 0 -5"
-				scale="4 4 4"
-				altspace-cursor-collider="enabled:false"
-				n-mesh-collider="type:environment;convex:true"
-				obj-model="obj: #Neon-obj; mtl: #Neon-mtl">
-			</a-entity>
-			<a-assets>
-				<a-asset-item id="Parts1-obj" src="JukeboxParts/Parts1.obj"></a-asset-item>
-				<a-asset-item id="Parts1-mtl" src="JukeboxParts/Parts1.mtl"></a-asset-item>
-			</a-assets>
-			<a-entity 
-				id="Parts1"
-				position="0 0 -5"
-				scale="4 4 4"
-				altspace-cursor-collider="enabled:false"
-				n-mesh-collider="type:environment;convex:true"
-				obj-model="obj: #Parts1-obj; mtl: #Parts1-mtl">
-			</a-entity>
-			<a-assets>
-				<a-asset-item id="Parts2-obj" src="JukeboxParts/Parts2.obj"></a-asset-item>
-				<a-asset-item id="Parts2-mtl" src="JukeboxParts/Parts2.mtl"></a-asset-item>
-			</a-assets>
-			<a-entity 
-				id="Parts2"
-				position="0 0 -5"
-				scale="4 4 4"
-				altspace-cursor-collider="enabled:false"
-				n-mesh-collider="type:environment;convex:true"
-				obj-model="obj: #Parts2-obj; mtl: #Parts2-mtl">
-			</a-entity>
-			<a-assets>
-				<a-asset-item id="Plastic1-obj" src="JukeboxParts/Plastic1.obj"></a-asset-item>
-				<a-asset-item id="Plastic1-mtl" src="JukeboxParts/Plastic1.mtl"></a-asset-item>
-			</a-assets>
-			<a-entity 
-				id="Plastic1"
-				position="0 0 -5"
-				scale="4 4 4"
-				altspace-cursor-collider="enabled:false"
-				n-mesh-collider="type:environment;convex:true"
-				obj-model="obj: #Plastic1-obj; mtl: #Plastic1-mtl">
-			</a-entity>
-			<a-assets>
-				<a-asset-item id="Plastic2-obj" src="JukeboxParts/Plastic2.obj"></a-asset-item>
-				<a-asset-item id="Plastic2-mtl" src="JukeboxParts/Plastic2.mtl"></a-asset-item>
-			</a-assets>
-			<a-entity 
-				id="Plastic2"
-				position="0 0 -5"
-				scale="4 4 4"
-				altspace-cursor-collider="enabled:false"
-				n-mesh-collider="type:environment;convex:true"
-				obj-model="obj: #Plastic2-obj; mtl: #Plastic2-mtl">
-			</a-entity>
-			<a-assets>
-				<a-asset-item id="Plastic3-obj" src="JukeboxParts/Plastic3.obj"></a-asset-item>
-				<a-asset-item id="Plastic3-mtl" src="JukeboxParts/Plastic3.mtl"></a-asset-item>
-			</a-assets>
-			<a-entity 
-				id="Plastic3"
-				position="0 0 -5"
-				scale="4 4 4"
-				altspace-cursor-collider="enabled:false"
-				n-mesh-collider="type:environment;convex:true"
-				obj-model="obj: #Plastic3-obj; mtl: #Plastic3-mtl">
-			</a-entity>
-			<a-assets>
-				<a-asset-item id="Speaker-obj" src="JukeboxParts/Speaker.obj"></a-asset-item>
-				<a-asset-item id="Speaker-mtl" src="JukeboxParts/Speaker.mtl"></a-asset-item>
-			</a-assets>
-			<a-entity 
-				id="Speaker"
-				position="0 0 -5"
-				scale="4 4 4"
-				altspace-cursor-collider="enabled:false"
-				n-mesh-collider="type:environment;convex:true"
-				obj-model="obj: #Speaker-obj; mtl: #Speaker-mtl">
-			</a-entity>
-			<a-assets>
-				<a-asset-item id="Wood1-obj" src="JukeboxParts/Wood1.obj"></a-asset-item>
-				<a-asset-item id="Wood1-mtl" src="JukeboxParts/Wood1.mtl"></a-asset-item>
-			</a-assets>
-			<a-entity 
-				id="Wood1"
-				position="0 0 -5"
-				scale="4 4 4"
-				altspace-cursor-collider="enabled:false"
-				n-mesh-collider="type:environment;convex:true"
-				obj-model="obj: #Wood1-obj; mtl: #Wood1-mtl">
-			</a-entity>
-			<a-assets>
-				<a-asset-item id="Wood2-obj" src="JukeboxParts/Wood2.obj"></a-asset-item>
-				<a-asset-item id="Wood2-mtl" src="JukeboxParts/Wood2.mtl"></a-asset-item>
-			</a-assets>
-			<a-entity 
-				id="Wood2"
-				position="0 0 -5"
-				scale="4 4 4"
-				altspace-cursor-collider="enabled:false"
-				n-mesh-collider="type:environment;convex:true"
-				obj-model="obj: #Wood2-obj; mtl: #Wood2-mtl">
-			</a-entity>
+<!--End-->
 		</a-scene>
 	</body>
 </html>
