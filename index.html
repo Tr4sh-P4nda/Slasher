@@ -11,6 +11,7 @@
 				<a-asset-item id="dj" src="assets/models/DJ Booth.dae"></a-asset-item>
 				<a-asset-item id="JB-obj" src="assets/models/Jukebox.obj"></a-asset-item>
 				<a-asset-item id="JB-mtl" src="assets/models/Jukebox.mtl"></a-asset-item>
+				<a-asset-item id="JB4" src="assets/models/Jukebox4.dae"></a-asset-item>
 			</a-assets>
 			<a-collada-model src="#dj"
 				position="0 0 10"
@@ -20,10 +21,16 @@
 			</a-collada-model>
 			<a-entity obj-model="obj: #JB-obj; mtl: #JB-mtl"
 				position="0 0 0"
-				scale="5 5 5"
+				scale="3 3 3"
 				altspace-cursor-collider="enabled:false" 
 				n-mesh-collider="type:environment;convex:true">
 			</a-entity>
+			<a-collada-model src="#JB4"
+				position="0 0 -10"
+				scale="4 4 4"
+				altspace-cursor-collider="enabled:false" 
+				n-mesh-collider="type:environment;convex:true">
+			</a-collada-model>
 			<a-plane src="assets/images/grid.png"
 				width="1000"
 				height="1000"
