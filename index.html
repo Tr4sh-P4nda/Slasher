@@ -8,50 +8,54 @@
 		<a-scene 
 			altspace=fullspace:true>
 			<a-assets>
-				<a-asset-item id="dj" src="assets/models/DJ Booth.dae"></a-asset-item>
-				<a-asset-item id="JB-obj" src="assets/models/Jukebox.obj"></a-asset-item>
-				<a-asset-item id="JB-mtl" src="assets/models/Jukebox.mtl"></a-asset-item>
+				<a-asset-item id="CDs-obj" src="JukeboxParts/CDs.obj"></a-asset-item>
+				<a-asset-item id="CDs-mtl" src="JukeboxParts/CDs.mtl"></a-asset-item>
+				<a-asset-item id="Legs1-obj" src="JukeboxParts/Legs1.obj"></a-asset-item>
+				<a-asset-item id="Legs1-mtl" src="JukeboxParts/Legs1.mtl"></a-asset-item>
+				<a-asset-item id="Legs2-obj" src="JukeboxParts/Legs2.obj"></a-asset-item>
+				<a-asset-item id="Legs2-mtl" src="JukeboxParts/Legs2.mtl"></a-asset-item>
+				<a-asset-item id="Metal1-obj" src="JukeboxParts/Metal1.obj"></a-asset-item>
+				<a-asset-item id="Metal1-mtl" src="JukeboxParts/Metal1.mtl"></a-asset-item>
+				<a-asset-item id="Metal2-obj" src="JukeboxParts/Metal2.obj"></a-asset-item>
+				<a-asset-item id="Metal2-mtl" src="JukeboxParts/Metal2.mtl"></a-asset-item>
+				<a-asset-item id="Metal3-obj" src="JukeboxParts/Metal3.obj"></a-asset-item>
+				<a-asset-item id="Metal3-mtl" src="JukeboxParts/Metal3.mtl"></a-asset-item>
+				<a-asset-item id="Neon-obj" src="JukeboxParts/Neon.obj"></a-asset-item>
+				<a-asset-item id="Neon-mtl" src="JukeboxParts/Neon.mtl"></a-asset-item>
+				<a-asset-item id="Parts1-obj" src="JukeboxParts/Parts1.obj"></a-asset-item>
+				<a-asset-item id="Parts1-mtl" src="JukeboxParts/Parts1.mtl"></a-asset-item>
+				<a-asset-item id="Parts2-obj" src="JukeboxParts/Parts2.obj"></a-asset-item>
+				<a-asset-item id="Parts2-mtl" src="JukeboxParts/Parts2.mtl"></a-asset-item>
+				<a-asset-item id="Plastic1-obj" src="JukeboxParts/Plastic1.obj"></a-asset-item>
+				<a-asset-item id="Plastic1-mtl" src="JukeboxParts/Plastic1.mtl"></a-asset-item>
+				<a-asset-item id="Plastic2-obj" src="JukeboxParts/Plastic2.obj"></a-asset-item>
+				<a-asset-item id="Plastic2-mtl" src="JukeboxParts/Plastic2.mtl"></a-asset-item>
+				<a-asset-item id="Plastic3-obj" src="JukeboxParts/Plastic3.obj"></a-asset-item>
+				<a-asset-item id="Plastic3-mtl" src="JukeboxParts/Plastic3.mtl"></a-asset-item>
+				<a-asset-item id="Speaker-obj" src="JukeboxParts/Speaker.obj"></a-asset-item>
+				<a-asset-item id="Speaker-mtl" src="JukeboxParts/Speaker.mtl"></a-asset-item>
+				<a-asset-item id="Wood1-obj" src="JukeboxParts/Wood1.obj"></a-asset-item>
+				<a-asset-item id="Wood1-mtl" src="JukeboxParts/Wood1.mtl"></a-asset-item>
+				<a-asset-item id="Wood2-obj" src="JukeboxParts/Wood2.obj"></a-asset-item>
+				<a-asset-item id="Wood2-mtl" src="JukeboxParts/Wood2.mtl"></a-asset-item>
 			</a-assets>
-			<a-collada-model src="#dj"
-				position="0 0 10"
-				scale="1 1 1"
-				altspace-cursor-collider="enabled:false" 
-				n-mesh-collider="type:environment;convex:true">
-			</a-collada-model>
-			<a-entity obj-model="obj: #JB-obj; mtl: #JB-mtl"
-				position="0 0 0"
-				scale="3 3 3"
-				altspace-cursor-collider="enabled:false" 
-				n-mesh-collider="type:environment;convex:true">
+			<a-entity id="CDs"
+				  obj-model="obj: #CDs-obj, #Legs1-obj, #Legs2-obj; mtl: #CDs-mtl, #Legs1-mtl, #Legs2-mtl"
+				  position="0 0 -10"
+				  scale="3 3 3"
+				  altspace-cursor-collider="enabled:false" 
+				  n-mesh-collider="type:environment;convex:true">
 			</a-entity>
 			<a-plane src="assets/images/grid.png"
-				width="1000"
-				height="1000"
-				material="repeat: 1000 1000; side: double"
-				rotation="90 0 0"
-				position="0 0.02 0">
+				 width="1000"
+				 height="1000"
+				 material="repeat: 1000 1000; side: double"
+				 rotation="90 0 0"
+				 position="0 0.02 0">
 			</a-plane>
-			<a-entity position="0 0 0">
-				<a-entity id="danceFloor" 
-					geometry="primitive: box;"
-					position='0 0 0'
-					scale='1 .01 1'
-					material="repeat:10 10"
-					n-mesh-collider="type: environment">
-				</a-entity>
-			</a-entity>
 			<a-sky src="assets/images/stars35.jpg"
 			       radius="1000">
 			</a-sky>
 		</a-scene>
-		<!---script>
-			var changeColorRandom = function () {
-				var rand = function () {
-					return Math.floor(Math.random() * 255)
-				};
-				document.querySelector('#danceFloor').setAttribute('material', 'color', 'rgb(' + rand() + ',' + rand() + ',' + rand() + ')');
-			}
-			setInterval(changeColorRandom, 469);
-		</script-->
 	</body>
 </html>
