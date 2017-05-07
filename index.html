@@ -7,6 +7,16 @@
 	<body>
 		<a-scene 
 			altspace=fullspace:true>
+			<a-plane src="assets/images/grid.png"
+				 width="1000"
+				 height="1000"
+				 material="repeat: 1000 1000; side: double"
+				 rotation="90 0 0"
+				 position="0 0.02 0">
+			</a-plane>
+			<a-sky src="assets/images/stars35.jpg"
+			       radius="1000">
+			</a-sky>
 			<a-assets>
 				<a-asset-item id="CDs-obj" src="JukeboxParts/CDs.obj"></a-asset-item>
 				<a-asset-item id="CDs-mtl" src="JukeboxParts/CDs.mtl"></a-asset-item>
@@ -187,17 +197,6 @@
 				n-mesh-collider="type:environment;convex:true"
 				obj-model="obj: #Wood2-obj; mtl: #Wood2-mtl">
 			</a-entity>
-			
-			<a-plane src="assets/images/grid.png"
-				 width="1000"
-				 height="1000"
-				 material="repeat: 1000 1000; side: double"
-				 rotation="90 0 0"
-				 position="0 0.02 0">
-			</a-plane>
-			<a-sky src="assets/images/stars35.jpg"
-			       radius="1000">
-			</a-sky>
 		</a-scene>
 	</body>
 </html>
