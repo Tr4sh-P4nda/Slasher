@@ -1,4 +1,4 @@
-# Blender MTL File: 'None'
+# Blender MTL File: 'Jukebox3.blend'
 # Material Count: 14
 
 newmtl black_plastic
@@ -30,7 +30,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 0.000000
 illum 2
-map_Kd cd.jpg
+map_Kd C:\Users\heath\Desktop\New Jukebox\Jukebox\cd.jpg
 
 newmtl glass
 Ns 0.000000
@@ -51,7 +51,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd indisp.jpg
+map_Kd C:\Users\heath\Desktop\New Jukebox\Jukebox\indisp.jpg
 
 newmtl neonic
 Ns 0.000000
@@ -62,7 +62,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd neonic.jpg
+map_Kd C:\Users\heath\Desktop\New Jukebox\Jukebox\neonic.jpg
 
 newmtl pink_neon
 Ns 0.000000
@@ -97,19 +97,19 @@ illum 2
 newmtl spesec
 Ns 0.000000
 Ka 0.000000 0.000000 0.000000
-Kd 1.000000 1.000000 1.000000
-Ks 0.972549 0.972549 0.972549
+Kd 0.006512 0.006512 0.006512
+Ks 0.006512 0.006512 0.006512
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd spesec.jpg
+map_Kd C:\Users\heath\Desktop\New Jukebox\Jukebox\spesec.jpg
 
 newmtl stand
 Ns 0.000000
 Ka 0.000000 0.000000 0.000000
-Kd 0.227451 0.227451 0.227451
-Ks 0.427451 0.427451 0.427451
+Kd 0.226966 0.226966 0.226966
+Ks 0.226966 0.226966 0.226966
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
@@ -124,7 +124,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd woodpa.jpg
+map_Kd C:\Users\heath\Desktop\New Jukebox\Jukebox\woodpa.jpg
 
 newmtl woodpad
 Ns 0.000000
@@ -135,7 +135,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd woodpa.jpg
+map_Kd C:\Users\heath\Desktop\New Jukebox\Jukebox\woodpa.jpg
 
 newmtl yellow_neon
 Ns 0.000000
