@@ -40,7 +40,7 @@
 				<a-asset-item id="Wood2-mtl" src="JukeboxParts/Wood2.mtl"></a-asset-item>
 			</a-assets>
 			<a-entity id="CDs"
-				  obj-model="obj: #CDs-obj, #Legs1-obj, #Legs2-obj; mtl: #CDs-mtl, #Legs1-mtl, #Legs2-mtl"
+				  obj-model="obj: #CDs-obj; obj: #Legs1-obj; obj: #Legs2-obj; mtl: #CDs-mtl; mtl: #Legs1-mtl; mtl: #Legs2-mtl"
 				  position="0 0 -10"
 				  scale="3 3 3"
 				  altspace-cursor-collider="enabled:false" 
@@ -49,7 +49,7 @@
 			<a-plane src="assets/images/grid.png"
 				 width="1000"
 				 height="1000"
-				 material="repeat: 1000 1000; side: double"
+				 material="repeat: 10 10; side: double"
 				 rotation="90 0 0"
 				 position="0 0.02 0">
 			</a-plane>
