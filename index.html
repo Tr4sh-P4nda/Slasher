@@ -15,25 +15,28 @@
 				<a-asset-item id="Side-obj" src="assets/models/Side.obj"></a-asset-item>
 				<a-asset-item id="Side-mtl" src="assets/models/Side.mtl"></a-asset-item>
 			</a-assets>
-			<a-entity postion="0 0 0"
-				  scale=".2 .2 .2">
-				<a-entity 
-					id="Front"
-					altspace-cursor-collider="enabled:false"
-					n-mesh-collider="type:environment;convex:true"
-					obj-model="obj: #Front-obj; mtl: #Front-mtl">
-				</a-entity>
-				<a-entity 
-					id="Back"
-					altspace-cursor-collider="enabled:false"
-					n-mesh-collider="type:environment;convex:true"
-					obj-model="obj: #Back-obj; mtl: #Back-mtl">
-				</a-entity><a-entity 
-					id="Side"
-					altspace-cursor-collider="enabled:false"
-					n-mesh-collider="type:environment;convex:true"
-					obj-model="obj: #Side-obj; mtl: #Side-mtl">
-				</a-entity>
+			<a-entity 
+				id="Front"
+				postion="0 0 0"
+				scale=".2 .2 .2"
+				altspace-cursor-collider="enabled:false"
+				n-mesh-collider="type:environment;convex:true"
+				obj-model="obj: #Front-obj; mtl: #Front-mtl">
+			</a-entity>
+			<a-entity 
+				id="Back"
+				postion="0 0 0"
+				scale=".2 .2 .2"
+				altspace-cursor-collider="enabled:false"
+				n-mesh-collider="type:environment;convex:true"
+				obj-model="obj: #Back-obj; mtl: #Back-mtl">
+			</a-entity><a-entity 
+				id="Side"
+				postion="0 0 0"
+				scale=".2 .2 .2"
+				altspace-cursor-collider="enabled:false"
+				n-mesh-collider="type:environment;convex:true"
+				obj-model="obj: #Side-obj; mtl: #Side-mtl">
 			</a-entity>
 			<a-plane src="assets/images/grid.png"
 				 width="1000"
