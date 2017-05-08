@@ -8,6 +8,34 @@
 	<body>
 		<a-scene 
 			altspace=fullspace:true>
+			<a-assets>
+				<a-asset-item id="Front-obj" src="assets/models/Front.obj"></a-asset-item>
+				<a-asset-item id="Front-mtl" src="assets/models/Front.mtl"></a-asset-item>
+				<a-asset-item id="Back-obj" src="assets/models/Back.obj"></a-asset-item>
+				<a-asset-item id="Back-mtl" src="assets/models/Back.mtl"></a-asset-item>
+				<a-asset-item id="Side-obj" src="assets/models/Side.obj"></a-asset-item>
+				<a-asset-item id="Side-mtl" src="assets/models/Side.mtl"></a-asset-item>
+			</a-assets>
+			<a-entity postion="0 0 0"
+				  scale=".2 .2 .2">
+				<a-entity 
+					id="Front"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #Front-obj; mtl: #Front-mtl">
+				</a-entity>
+				<a-entity 
+					id="Back"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #Back-obj; mtl: #Back-mtl">
+				</a-entity><a-entity 
+					id="Side"
+					altspace-cursor-collider="enabled:false"
+					n-mesh-collider="type:environment;convex:true"
+					obj-model="obj: #Side-obj; mtl: #Side-mtl">
+				</a-entity>
+			</a-entity>
 			<a-plane src="assets/images/grid.png"
 				 width="1000"
 				 height="1000"
@@ -18,16 +46,6 @@
 			<a-sky src="assets/images/stars35.jpg"
 			       radius="1000">
 			</a-sky>
-			<a-assets>
-				<a-asset-item id="JBLP-dae" src="assets/models/JukeboxLP.dae"></a-asset-item>
-			</a-assets>
-			<a-collada-model 
-				src="#JBLP-dae"
-				position="0 0 10"
-				scale=".2 .2 .2"
-				altspace-cursor-collider="enabled:false"
-				n-mesh-collider="type:environment;convex:true">
-			</a-collada-model>
 		</a-scene>
 	</body>
 </html>
